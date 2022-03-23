@@ -15,42 +15,48 @@
 
 </head>
 
-<!--Begin Navigation-->
-<div id="navbar">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
-
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="Registrer General Logo" /></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              About US
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="vision.html">Vision & Mission</a>
-              <a class="dropdown-item" href="team.html">Team</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="passportapp.html">Application</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="Registrer General Logo" /></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Layanan
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+            <a class="dropdown-item" href="team.html">Team</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="passportapp.html">Application</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            About US
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+            <a class="dropdown-item" href="team.html">Team</a>
+            <a class="dropdown-item" href="contact.html"></a>
+          </div>
+        </li>
+      </ul>
     </div>
-  </nav>
-</div>
+
+  </div>
+</nav>
 <!--End Navigation-->
 
 <div id="spacing">
@@ -95,95 +101,81 @@
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">Birth Entry Number:</label>
+              <label class=" control-label" for="textinput">Name:</label>
               <div class="">
-                <input id="textinput" name="textinput" type="text" placeholder="Birth Entry Number" class="form-control input-md"
+                <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md"
                   required="">
-                <span class="help-block">Enter Birth Entry Number</span>
+                <span class="help-block"><i>Enter your Fullname</i></span>
               </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">Surname</label>
+              <label class=" control-label" for="textinput">Airline</label>
               <div class="">
-                <input id="textinput" name="surname" type="text" placeholder="Surname" class="form-control input-md"
+                <input id="textinput" name="surname" type="text" placeholder="Airline name e.g : Garuda Indonesia, Air Asia etc." class="form-control input-md"
                   required="">
-                <span class="help-block">Enter Surname</span>
+                <span class="help-block"><i>Enter your Airline name</i></span>
               </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">First Name(s)</label>
+              <label class=" control-label" for="textinput">Passport Number</label>
               <div class="">
-                <input id="textinput" name="fname" type="text" placeholder="Other Names" class="form-control input-md">
-                <span class="help-block">Enter Your Other Names</span>
+                <input id="textinput" name="fname" type="text" placeholder="Passport number e.g : 761xxxxh652" class="form-control input-md">
+                <span class="help-block"><i>Your Passport Number</i></span>
               </div>
             </div>
 
-            <!-- Name Change -->
+            <!-- Text Input (date)-->
             <div class="form-group">
-              <label class=" control-label" for="radios">Has name been changed? If yes, state how changed?</label>
+              <label class=" control-label" for="textinput">Passport Request date</label>
               <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="namechng" id="radios-0" value="1" checked="checked">
-                    Yes
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="namechng" id="radios-1" value="2">
-                    No
-                  </label>
-                </div>
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your passport request date</i></span>
+              </div>
+            </div>
+            
+            <!-- Text Input (date)-->
+            <div class="form-group">
+              <label class=" control-label" for="textinput">Passport filling date</label>
+              <div class="">
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your passpor filling date</i></span>
               </div>
             </div>
 
-            <!--Name Change Times-->
+            <!-- Text Input (date)-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">State How Name has been changed</label>
+              <label class=" control-label" for="textinput">Passport Issued date</label>
               <div class="">
-                <input id="textinput" name="chngtimes" type="text" placeholder="" class="form-control input-md">
-
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your passport Issued date</i></span>
               </div>
             </div>
 
-            <!-- Marital Status -->
+            <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="radios">Marital Status</label>
+              <label class=" control-label" for="textinput">Visa Number</label>
               <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="marital" id="radios-0" value="1" checked="checked">
-                    Single
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="marital" id="radios-1" value="2">
-                    Married
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-2">
-                    <input type="radio" name="marital" id="radios-2" value="3">
-                    Divorced
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-3">
-                    <input type="radio" name="marital" id="radios-3" value="4">
-                    Widowed
-                  </label>
-                </div>
+                <input id="textinput" name="fname" type="text" placeholder="Visa number e.g : 761xxxxh652" class="form-control input-md">
+                <span class="help-block"><i>Enter Your Visa Number</i></span>
               </div>
             </div>
 
-            <!-- sex -->
+            <!-- Text Input (date)-->
             <div class="form-group">
-              <label class=" control-label" for="radios">Sex(M/F)</label>
+              <label class=" control-label" for="textinput">Visa Expired date</label>
+              <div class="">
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your Visa Expired date</i></span>
+              </div>
+            </div>
+
+            <!-- gender -->
+            <div class="form-group">
+              <label class=" control-label" for="radios">Gender(M/F)</label>
               <div class="">
                 <div class="radio">
                   <label for="radios-0">
@@ -476,283 +468,15 @@
           </fieldset>
         </div>
 
-        <div class="form-horizontal jumbotron" id="Marital Status">
-          <fieldset>
-
-            <!-- Form Name -->
-            <legend>2. Married, Divorced or Widowed</legend>
-
-            <!--Date of Marriage-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Date of Marriage(YY/MM/DD)</label>
-              <div class="">
-                <input name="dateofm" type="date" class="form-control input-md">
-                <span class="help-block">Enter Date of Marriage</span>
-              </div>
-            </div>
-
-            <!-- Spouse Details-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Spouse's Full Name</label>
-              <div class="">
-                <input id="textinput" name="spousename" type="text" placeholder="Fullname" class="form-control input-md">
-                <span class="help-block">Name of Spouse</span>
-              </div>
-            </div>
-
-            <!-- Marriage Place-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Place and Country of Marriage</label>
-              <div class="">
-                <input id="textinput" name="placeofm" type="text" placeholder="Place of Marriage" class="form-control input-md">
-                <span class="help-block">Place of Marriage</span>
-              </div>
-            </div>
-
-            <!-- Spouse Name-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Spouse</label>
-              <div class="">
-                <input id="textinput" name="spouse" type="text" placeholder="Spouse" class="form-control input-md">
-
-              </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">State if Married More than once</label>
-              <div class="">
-                <input id="textinput" name="marriedonce" type="text" placeholder="Married more than once?" class="form-control input-md">
-
-              </div>
-            </div>
-
-          </fieldset>
-        </div>
-
-        <div class="form-horizontal jumbotron" id="Next of Kin">
-          <fieldset>
-
-            <!-- Form Name -->
-            <legend>3. Next Of Kin</legend>
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Full Name</label>
-              <div class="">
-                <input id="textinput" name="kin" type="text" placeholder="Full Name" class="form-control input-md">
-                <span class="help-block">Enter Next of Kin's Full Name</span>
-              </div>
-            </div>
-
-            <!-- Kin relationship-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Relation to Applicant</label>
-              <div class="">
-                <input id="textinput" name="kinrel" type="text" placeholder="Relation to Applicant" class="form-control input-md">
-                <span class="help-block">Enter Next of Kin's relation to you</span>
-              </div>
-            </div>
-
-            <!-- Kin Res-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Residential Address</label>
-              <div class="">
-                <input id="textinput" name="kinres" type="text" placeholder="Residential Address" class="form-control input-md">
-                <span class="help-block">Enter next of Kin's Residential Address</span>
-              </div>
-            </div>
-
-            <!-- kin phone-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Phone Number</label>
-              <div class="">
-                <input id="textinput" name="textinput" type="text" placeholder="+263773 000 000 " class="form-control input-md">
-                <span class="help-block">Enter Next Of Kin's Phone Number</span>
-              </div>
-            </div>
-
-          </fieldset>
-        </div>
-
-        <div class="form-horizontal jumbotron" id="Applicant Declaration">
-          <fieldset>
-
-            <!-- Form Name -->
-            <legend>4. Declaration by Applicant </legend>
-
-            <!-- Citizenship -->
-            <div class="form-group">
-              <label class=" control-label" for="radios">1. I am a citizen of Zimbabwe by:</label>
-              <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="citizenship" id="radios-0" value="1" checked="checked">
-                    Birth
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="citizenship" id="radios-1" value="2">
-                    Descent
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-2">
-                    <input type="radio" name="citizenship" id="radios-2" value="3">
-                    Registration
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Citizenship -->
-            <div class="form-group">
-              <label class=" control-label" for="radiotrav">2. Were you ever issued with a ZIMBABWEAN PASSPORT/TRAVEL
-                DOCUMENT?</label>
-              <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="radiotrav" id="radios-0" value="1" checked="checked">
-                    No
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="radiotrav" id="radios-1" value="2">
-                    Yes(valid)
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-2">
-                    <input type="radio" name="radiotrav" id="radios-2" value="3">
-                    Yes(expired)
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-3">
-                    <input type="radio" name="radiotrav" id="radios-3" value="4">
-                    Yes(full)
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-4">
-                    <input type="radio" name="radiotrav" id="radios-4" value="">
-                    Yes(lost)
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Foreign Pass -->
-            <div class="form-group">
-              <label class=" control-label" for="foreignpass">3. Do you hold a foreign passport?</label>
-              <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="foreignpass" id="radios-0" value="1" checked="checked">
-                    Yes
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="foreignpass" id="radios-1" value="2">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Foreign Pass Details-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">If yes, enter passport number:</label>
-              <div class="">
-                <input id="textinput" name="fpdetails" type="text" placeholder="Passport no" class="form-control input-md">
-
-              </div>
-            </div>
-
-            <!-- Zim Cit -->
-            <div class="form-group">
-              <label class=" control-label" for="radios">4. Did you renounce your foreign birth right in favour of a
-                Zimbabwean citizenship? </label>
-              <div class="">
-                <div class="radio">
-                  <label for="radios-0">
-                    <input type="radio" name="radiobr" id="radios-0" value="1" checked="checked">
-                    Yes
-                  </label>
-                </div>
-                <div class="radio">
-                  <label for="radios-1">
-                    <input type="radio" name="radiobr" id="radios-1" value="2">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- passnoo-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">If yes, enter passport Number</label>
-              <div class="">
-                <input id="textinput" name="paspno" type="text" placeholder="Passport Number" class="form-control input-md">
-                <span class="help-block">Passport No</span>
-              </div>
-            </div>
-
-          </fieldset>
-        </div>
-
         <div class="form-horizontal jumbotron" id="lost particulars">
           <fieldset>
 
-            <!-- Form Name -->
-            <legend>5. Particulars of lost or not available for present use</legend>
-
-            <!-- Passport No-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Passport No.</label>
-              <div class="">
-                <input id="textinput" name="lostpassno" type="text" placeholder="Passport No" class="form-control input-md">
-                <span class="help-block">Passport Number</span>
-              </div>
-            </div>
-
-            <!-- -->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Issued at</label>
-              <div class="">
-                <input id="textinput" name="issdate" type="text" placeholder="Issue Date" class="form-control input-md">
-                <span class="help-block">Enter date of Issue</span>
-              </div>
-            </div>
-
-            <!-- bname-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Bearers Full Name</label>
-              <div class="">
-                <input id="textinput" name="bname" type="text" placeholder="Full Name" class="form-control input-md">
-                <span class="help-block">Name of bearer</span>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class=" control-label" for="textarea">How was the Passport lost(if lost)</label>
-              <div class="">
-                <textarea class="form-control" id="lostreason" name="textarea">Explain how you lost your Passport</textarea>
-              </div>
-            </div>
-
-          </fieldset>
-        </div>
 
         <div class="form-horizontal jumbotron" id="documents">
           <fieldset>
 
             <!-- Form Name -->
-            <legend>6. Documents</legend>
+            <legend>2. Documents</legend>
 
             <!-- ID-->
             <div class="form-group">
@@ -785,7 +509,7 @@
           <fieldset>
 
             <!-- Form Name -->
-            <legend>7. Submission</legend>
+            <legend>3. Submission</legend>
 
             <!-- Multiple Checkboxes -->
             <div class="form-group">
