@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Passport Application</title>
+  <title>Visa Application</title>
   <link href="./images/tablogo.png" rel="shortcut icon">
   <link href="bs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
@@ -74,13 +74,13 @@
   <div id="form">
     <div id="form header" align="center">
       <img src="./images/Garuda logo.png" alt="Logo">
-      <h1>GMF Aeroasia Passport Form</h1>
+      <h1>GMF Customer Visa Application Form</h1>
       <p><i>Please fill in your details in the form and hit submit</i></p>
       <form action="logout.php" method="post">
+        <a href="passportapp.html">
+          <button enabled="enabled" >Return to Passport Application</button>
+        </a>
       </form>
-      <a href="VisaApplication.html">
-        <button enabled="enabled" >Apply your visa here</button>
-      </a>
       <br>
     </div>
 
@@ -94,47 +94,65 @@
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">Name:</label>
+              <label class=" control-label" for="textinput">Id Number:</label>
               <div class="">
-                <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md"
+                <input id="textinput" name="idnum" type="text" placeholder="63-xxxx xxx x 75" class="form-control input-md"
                   required="">
-                <span class="help-block"><i>Masukkan nama lengkap anda</i></span>
+                <span class="help-block"><i>Enter ID Number</i></span>
               </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">Nomor Passport</label>
+              <label class=" control-label" for="textinput">Name:</label>
               <div class="">
-                <input id="textinput" name="fname" type="text" placeholder="Passport number e.g : 761xxxxh652" class="form-control input-md">
-                <span class="help-block"><i>Masukkan Nomor Passport anda</i></span>
-              </div>
-            </div>
-            
-            <!-- Text Input (date)-->
-            <div class="form-group">
-              <label class=" control-label" for="textinput">Tanggal pengajuan passport</label>
-              <div class="">
-                <input name="dateofm" type="date" class="form-control input-md">
-                <span class="help-block"><i>Kapan anda mengajukan Passport anda?</i></span>
+                <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md"
+                  required="">
+                <span class="help-block"><i>Enter your Fullname</i></span>
               </div>
             </div>
 
+            <!-- Text input-->
+            <div class="form-group">
+              <label class=" control-label" for="textinput">Passport Number</label>
+              <div class="">
+                <input id="textinput" name="fname" type="text" placeholder="Passport number e.g : 761xxxxh652" class="form-control input-md">
+                <span class="help-block"><i>Your Passport Number</i></span>
+              </div>
+            </div>
+
+            <!-- Text Input (date)-->
+            <div class="form-group">
+              <label class=" control-label" for="textinput">Passport filling date</label>
+              <div class="">
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your passpor filling date</i></span>
+              </div>
+            </div>
+
+            <!-- Text Input (date)-->
+            <div class="form-group">
+              <label class=" control-label" for="textinput">Visa Expired date</label>
+              <div class="">
+                <input name="dateofm" type="date" class="form-control input-md">
+                <span class="help-block"><i>your Visa Expired date</i></span>
+              </div>
+            </div>
 
             <!-- gender -->
             <div class="form-group">
-              <label class=" control-label" for="radios">Gender(L/P)</label>
+              <label class=" control-label" for="radios">Gender(M/F)</label>
               <div class="">
                 <div class="radio">
                   <label for="radios-0">
                     <input type="radio" name="sex" id="radios-0" value="1" checked="checked">
-                    Laki-Laki
+                    Male
                   </label>
                 </div>
                 <div class="radio">
                   <label for="radios-1">
                     <input type="radio" name="sex" id="radios-1" value="2">
-                    Perempuan
+                    Female
                   </label>
                 </div>
               </div>
@@ -143,14 +161,14 @@
             <!-- Date of Birth -->
             <div class="form-group">
               <label class=" control-label" for="selectbasic">
-                Tanggal Lahir:
+                Date of Birth:
                 <input type="date" name="dob">
               </label>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-              <label class=" control-label" for="textinput">Tempat Lahir:</label>
+              <label class=" control-label" for="textinput">Place of Birth:</label>
               <div class="">
                 <input id="textinput" name="textinput" type="text" placeholder="City of Birth" class="form-control input-md">
                 <span class="help-block"><i>Enter City</i></span>
@@ -159,7 +177,7 @@
 
             <!-- Country -->
             <div class="form-group">
-              <label class=" control-label" for="selectbasic">Negara Kelahiran</label>
+              <label class=" control-label" for="selectbasic">Country of Birth</label>
               <div class="">
                 <select id="countries" name="country" <option value="AF">Afghanistan</option>
                   <option value="AX">Åland Islands</option>
@@ -424,83 +442,29 @@
           <fieldset>
 
             <!-- Form Name -->
-            <legend>Documents (Passport Dewasa)</legend>
+            <legend>2. Documents</legend>
 
-            <!--Natoinal ID-->
+            <!-- ID-->
             <div class="form-group">
-              <label class=" control-label" for="filebutton">Fotocopy KTP</label>
+              <label class=" control-label" for="filebutton">Upload your latest photo</label>
               <div class="">
                 <input id="filebutton" name="idcopy" class="input-file" type="file">
               </div>
             </div>
 
-            <!-- Kartu Keluarga -->
+            <!-- Birth -->
             <div class="form-group">
-              <label class=" control-label" for="filebutton">Fotocopy KK/Kartu Keluarga</label>
+              <label class=" control-label" for="filebutton">Upload scanned and certified copy of National ID</label>
               <div class="">
                 <input id="filebutton" name="birthcopy" class="input-file" type="file">
               </div>
             </div>
 
-            <!-- Akta Kelahiran -->
+            <!-- Previous Pass -->
             <div class="form-group">
-              <label class=" control-label" for="passcopy">Akta Kelahiran</label>
+              <label class=" control-label" for="passcopy">Upload Scan of Passport or Previous Visa</label>
               <div class="">
                 <input id="filebutton" name="filebutton" class="input-file" type="file">
-              </div>
-            </div>
-
-            <!-- Copy Bukti WNI -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Copy Bukti WNI</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Apabila yang di akte kelahiran golongan Tionghoa</i></span>
-              </div>
-            </div>
-            
-            <!-- Copy Ijazah terbaru -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Copy Ijazah Terbaru</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Khusus pembuatan baru</i></span>
-              </div>
-            </div>
-
-            <!-- Buku Nikah -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Copy Buku Nikah (Akta Nikah)</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Jika ada</i></span>
-              </div>
-            </div>
-
-            <!-- Copy Surat ganti nama -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Copy Surat Ganti nama</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Jika ada</i></span>
-              </div>
-            </div>
-
-            <!-- Surat Sponsor -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Surat Sponsor</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Jika status KTP Karyawan/Karyawati</i></span>
-              </div>
-            </div>
-
-            <!-- Copy Ijazah terbaru -->
-            <div class="form-group">
-              <label class=" control-label" for="passcopy">Passport lama (Asli)</label>
-              <div class="">
-                <input id="filebutton" name="filebutton" class="input-file" type="file">
-                <span class="help-block"><i>*Khusus perpanjangan</i></span>
               </div>
             </div>
 
